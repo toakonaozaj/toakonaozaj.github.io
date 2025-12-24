@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+}
+
+.gallery {
+  column-count: 4;
+  column-gap: 12px;
+  padding: 12px;
+}
+
+@media (max-width: 1200px) {
+  .gallery { column-count: 3; }
+}
+@media (max-width: 800px) {
+  .gallery { column-count: 2; }
+}
+@media (max-width: 500px) {
+  .gallery { column-count: 1; }
+}
+
+.gallery a {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.gallery img {
+  width: 100%;
+  display: block;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.95);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.lightbox img {
+  max-width: 95%;
+  max-height: 95%;
+}
+
+.lightbox:target {
+  display: flex;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  pointer-events: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="gallery">
+  <a href="#img32"><img src="images/32.webp" alt=""></a>
+  <a href="#img31"><img src="images/31.webp" alt=""></a>
+  <a href="#img30"><img src="images/30.webp" alt=""></a>
+  <a href="#img29"><img src="images/29.webp" alt=""></a>
+  <a href="#img28"><img src="images/28.webp" alt=""></a>
+  <a href="#img27"><img src="images/27.webp" alt=""></a>
+  <a href="#img26"><img src="images/26.webp" alt=""></a>
+  <a href="#img25"><img src="images/25.webp" alt=""></a>
+  <a href="#img24"><img src="images/24.webp" alt=""></a>
+  <a href="#img23"><img src="images/23.webp" alt=""></a>
+  <a href="#img22"><img src="images/22.webp" alt=""></a>
+  <a href="#img21"><img src="images/21.webp" alt=""></a>
+  <a href="#img20"><img src="images/20.webp" alt=""></a>
+  <a href="#img19"><img src="images/19.webp" alt=""></a>
+  <a href="#img18"><img src="images/18.webp" alt=""></a>
+  <a href="#img17"><img src="images/17.webp" alt=""></a>
+  <a href="#img16"><img src="images/16.webp" alt=""></a>
+  <a href="#img15"><img src="images/15.webp" alt=""></a>
+  <a href="#img14"><img src="images/14.webp" alt=""></a>
+  <a href="#img13"><img src="images/13.webp" alt=""></a>
+  <a href="#img12"><img src="images/12.webp" alt=""></a>
+  <a href="#img11"><img src="images/11.webp" alt=""></a>
+  <a href="#img10"><img src="images/10.webp" alt=""></a>
+  <a href="#img9"><img src="images/9.webp" alt=""></a>
+
+  <a href="#img7"><img src="images/7.webp" alt=""></a>
+  <a href="#img6"><img src="images/6.webp" alt=""></a>
+  <a href="#img5"><img src="images/5.webp" alt=""></a>
+
+  <a href="#img3"><img src="images/3.webp" alt=""></a>
+  <a href="#img2"><img src="images/2.webp" alt=""></a>
+  <a href="#img1"><img src="images/1.webp" alt=""></a>
+
+</div>
+
+<a href="#" class="lightbox" id="img32">
+  <img src="images/32.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img31">
+  <img src="images/31.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img30">
+  <img src="images/30.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img29">
+  <img src="images/29.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img28">
+  <img src="images/28.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img27">
+  <img src="images/27.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img26">
+  <img src="images/26.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img25">
+  <img src="images/25.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img24">
+  <img src="images/24.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img23">
+  <img src="images/23.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img22">
+  <img src="images/22.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img21">
+  <img src="images/21.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img20">
+  <img src="images/20.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img19">
+  <img src="images/19.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img18">
+  <img src="images/18.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img17">
+  <img src="images/17.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img16">
+  <img src="images/16.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img15">
+  <img src="images/15.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img14">
+  <img src="images/14.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img13">
+  <img src="images/13.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img12">
+  <img src="images/12.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img11">
+  <img src="images/11.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img10">
+  <img src="images/10.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img9">
+  <img src="images/9.webp" alt="">
+</a>
+
+
+
+<a href="#" class="lightbox" id="img7">
+  <img src="images/7.jpg" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img6">
+  <img src="images/6.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img5">
+  <img src="images/5.webp" alt="">
+</a>
+
+
+
+<a href="#" class="lightbox" id="img3">
+  <img src="images/3.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img2">
+  <img src="images/2.webp" alt="">
+</a>
+
+<a href="#" class="lightbox" id="img1">
+  <img src="images/1.webp" alt="">
+</a>
+
+<footer>
+  CC BY-NC 4.0 Filip Ludvig
+</footer>
+
+</body>
+</html>
